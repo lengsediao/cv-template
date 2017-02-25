@@ -1,204 +1,155 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="en" class="translated-ltr"><head>
     <meta charset="UTF-8">
-    <title>简历生成器</title>
+    <title>简历</title>
     <link rel="stylesheet" href="static/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal-default-theme.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.1.0/remodal.min.js"></script>
     <script src="static/js/script.js"></script>
-</head>
+<link type="text/css" rel="stylesheet" charset="UTF-8" href="https://translate.googleapis.com/translate_static/css/translateelement.css"></head>
 
-<body>
+<body style="padding-right: 0px;">
     <div class="container" id="cv">
         <div class="side">
             <div class="me">
                 <div class="portrait"></div>
-                <div class="remodal remodal-img" data-remodal-id="portrait-modal">
-                    <h3>请输入图片URL地址：</h3>
-                    <br/>
-                    <input type="text" id="avatar-url">
-                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-                </div>
-                <h1 id="username" >ekCit</h1>
-                <h4 id="persona-tag" >Python / Web / 互联网教育</h4>
+                
+                <h1 id="username" contenteditable="true">刘千源</h1>
+                <h4 id="persona-tag" contenteditable="true">web前端攻城狮</h4>
             </div>
             <div class="profile info-unit">
-                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title">基本信息</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-person"></i> <span class="info-title" contenteditable="true">基本信息</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <ul class="info-list">
                     <li>
-                        <label class="left-label">姓名</label><span class="label-value">XXX</span></li>
+                        <label class="left-label" contenteditable="true">姓名</label><span class="label-value" contenteditable="true">刘千源</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label">学历</label><span class="label-value">本科</span></li>
+                        <label class="left-label" contenteditable="true">学历</label><span class="label-value" contenteditable="true">大专</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label">毕业院校</label><span class="label-value">北京邮电大学</span></li>
+                        <label class="left-label" contenteditable="true">毕业院校</label><span class="label-value" contenteditable="true">保定职业技术学院</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label">毕业年份</label><span class="label-value">2017</span></li>
-                </ul>
+                        <label class="left-label" contenteditable="true">毕业年份</label><span class="label-value" contenteditable="true">2016.6</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                <li>
+                        <label class="left-label" contenteditable="true">政治面貌</label><span class="label-value" contenteditable="true">中共党员</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li></ul>
             </div>
             <div class="contact info-unit">
-                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title">联系方式</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-call"></i> <span class="info-title" contenteditable="true">联系方式</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <ul class="info-list">
                     <li>
-                        <label class="left-label">手机</label><span class="label-value">182XXXXXXXX</span></li>
+                        <label class="left-label" contenteditable="true">手机</label><span class="label-value" contenteditable="true">15369263352</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label">邮箱</label><span class="label-value">crmrc2014@gmail.com</span></li>
+                        <label class="left-label" contenteditable="true">邮箱</label><span class="label-value" contenteditable="true">1752551073@qq.com</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label">个人主页</label><span class="label-value">exit-tixe.me</span></li>
+                        <label class="left-label" contenteditable="true">个人主页</label><span class="label-value" contenteditable="true">lengsediao.github.io</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <label class="left-label">Github</label><span class="label-value">github.com/ekCit</span></li>
+                        <label class="left-label" contenteditable="true"><font><font>GitHub的</font></font></label><span class="label-value" contenteditable="true"><font><font>github.com/lengsediao</font></font></span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                 </ul>
             </div>
-            <div class="skill info-unit">
-                <h2 class="info-header"><i class="iconfont icon-star"></i> <span class="info-title">技能点</span></h2>
-                <hr>
-                <ul class="progress-list">
-                    <li>
-                        <label class="left-label">Python</label>
-                        <progress value="80" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">html/css</label>
-                        <progress value="70" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">Javascript</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                    <li>
-                        <label class="left-label">机器学习</label>
-                        <progress value="60" max="100"></progress>
-                    </li>
-                </ul>
-            </div>
+            
             <div class="stack info-unit">
-                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title">技术栈</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-build"></i> <span class="info-title" contenteditable="true">技术栈</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <ul class="stack-list">
                     <li>
-                        <label class="left-label">前端</label><span class="label-value">jQuery、Angular.js、React.js</span></li>
-                    </li>
+                        <label class="left-label" contenteditable="true">前端</label><span class="label-value" contenteditable="true">jQuery、Angular.js、bootstrap</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    
                     <li>
-                        <label class="left-label">后端</label><span class="label-value">Flask、Django、Twisted、Node.js、MongoDB、MySQL、Redis</span></li>
-                    </li>
+                        <label class="left-label" contenteditable="true">工具库</label><span class="label-value" contenteditable="true">moment.js、lodash.js</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    
                     <li>
-                        <label class="left-label">其它</label><span class="label-value">我全都是瞎写的。</span></li>
-                    </li>
-                </ul>
+                        <label class="left-label" contenteditable="true">前端构建工具</label><span class="label-value" contenteditable="true">gulp、webpack</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                    
+                <li>
+                        <label class="left-label" contenteditable="true">版本控制</label><span class="label-value" contenteditable="true">git</span><span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li></ul>
             </div>
 
             <div class="code info-unit">
-                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title">个人微信</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-weixin"></i> <span class="info-title" contenteditable="true">个人微信</span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <div class="weixin">
-                    <img src="static/image/weixin.png" alt="">
+                    <img src="" alt="">
 
                 </div>
             </div>
-            <div class="remodal remodal-img" data-remodal-id="weixin-modal">
-                <h3>请输入图片URL地址：</h3>
-                <br/>
-                <input type="text" id="weixin-url">
-                <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
-            </div>
+            
         </div>
         <div class="main">
-            <div class="education info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title">教育经历</span></h2>
+
+            <div class="trophy info-unit">
+                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title" contenteditable="true">IT技能</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>北京邮电大学 - 网络工程专业（本科）2012-2017</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </li>
+                        <h3 contenteditable="true"><div>1、熟练使用DIV+CSS页面布局，响应式布局；</div><div>2、熟练使用javascript、jquery开发web应用；</div><div>3、熟练主流的框架Bootstrap框架搭建网页；</div><div>4、熟练使用Photoshop等软件，能够使用photoshop进行切图优化、页面设计；</div><div>5、能够熟练使用WebStorm、Dreamweaver等主流编辑器；</div><div>6、了解gulp前端自动化构建工具；</div><div>7、了解angularjs前端框架；</div><div>8、了解moment.Js工具库</div></h3>
+                        <p contenteditable="true"></p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li> 
+                     
+                                         
+                </ul>
+            </div>
+            <div class="education info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-education"></i> <span class="info-title" contenteditable="true">教育经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
+                <hr>
+                <ul class="experience-list">
+                    <li>
+                        <h3 contenteditable="true">保定职业技术学院--多媒体设计与制作（大专）2013.09-2016.06</h3>
+                        <p contenteditable="true"><font color="#000000" face="Microsoft YaHei">主修：平面设计、静态网页</font></p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                 </ul>
             </div>
             <div class="work info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title">工作经历</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-work"></i> <span class="info-title" contenteditable="true">工作经历</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <ul class="experience-list">
                     <li>
-                        <h3>北京创客空间－实习生（实习）</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                        </p>
-                    </li>
+                        <h3 contenteditable="true">北京毫末科技有限公司（web前端）</h3>
+                        <p contenteditable="true">界面交互</p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <h3>实验楼－课程内容（实习）</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                </ul class="experience-list">
-            </div>
-            <div class="project info-unit right-list">
-                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title">个人项目</span></h2>
-                <hr>
-                <ul class="experience-list">
-                    <li>
-                        <h3>基于 Qt 5 的文本编辑器</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                            <br/>
-                        </p>
-                    </li>
-                    <li>
-                        <h3>基于 Flask 的主机监视系统</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>基于 Live2D 与 clmtrackr 的山寨 Facerig</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
-                    <li>
-                        <h3>如果项目太少，可以在实验楼上找项目做啊:D</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        </p>
-                    </li>
+                        <h3 contenteditable="true">保定尘美软件有限公司（淘宝美工）</h3>
+                        <p contenteditable="true"><p class="15" style="margin-right:0.0000pt;margin-left:0.0000pt;mso-para-margin-right:0.0000gd;mso-para-margin-left:0.0000gd;text-indent:0.0000pt;mso-char-indent-count:0.0000;text-autospace:ideograph-numeric;mso-pagination:none;line-height:150%;"><span style="mso-spacerun:'yes';font-family:宋体;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><font face="宋体">主要负责淘宝网页的界面设计，进行淘宝图片处理、制作、淘宝店铺装修等</font></span><span style="mso-spacerun:'yes';font-family:宋体;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p></p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                 </ul>
             </div>
-            <div class="trophy info-unit">
-                <h2 class="info-header"><i class="iconfont icon-trophy"></i> <span class="info-title">奖项与证书</span></h2>
+            <div class="project info-unit right-list">
+                <h2 class="info-header"><i class="iconfont icon-project"></i> <span class="info-title" contenteditable="true">个人项目</span><span class="item-add" style="visibility: hidden;"><i class="iconfont icon-playlistadd"></i></span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
                 <hr>
                 <ul class="experience-list">
+                    
                     <li>
-                        <h3>小学生作文二等奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
+                        <h3 contenteditable="true">鸿合业务协作系统</h3>
+                        <p contenteditable="true"><p class="MsoNormal"><font face="宋体"><span style="font-size: 15px;">责任描述：</span></font></p><p class="MsoNormal"><font face="宋体"><span style="font-size: 15px;">1、主要负责前端布局的搭建，以及JS交互 ，接口数据交互的实现。</span></font></p><p class="MsoNormal"><font face="宋体"><span style="font-size: 15px;">2、主要使用AngularJs UI-GRID来创建UI界面的整体风格。</span></font></p><p class="MsoNormal"><font face="宋体"><span style="font-size: 15px;">3、引入Lodash.Js、Moment.Js 等工具库提高代码质量以及优化代码,同时来完成各项交互， &nbsp; 提高效率。</span></font></p><p class="MsoNormal"><font face="宋体"><span style="font-size: 15px;">4、使用Swagger定义接口</span></font></p><p class="MsoNormal"><font face="宋体"><span style="font-size: 15px;">项目简介：</span></font></p><p class="MsoNormal"><font face="宋体"><span style="font-size: 15px;">该项目是为了企业营销合同管理开发的crm系统，实现了权限管理、产品库管理、统计分析、电子签章、工作报告等项目功能，为方便业务管理提供了强大的帮助。</span></font></p></p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <h3>曾获统一冰红茶“再来一瓶”奖</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li> 
+                        <h3 contenteditable="true">佩兰香皂</h3>
+                        <p contenteditable="true"><div><font><font>责任描述：</font></font></div><div>1、使用HTML，CSS，JavaScript等进行页面的布局制作;</div><div>2、运用JavaScript和JQuery等实现页面上的动态效果</div><div>3、解决常见浏览器兼容性问题，例如IE、Firefox、 Chrome，Safari等</div><div><font><font>项目简介：</font></font></div><div>关于佩兰：详细介绍了佩兰公司的情况，让客户能够全面的了解公司的发展历程和发展理念；</div><div>定制服务：为客户提供个性定制以及香皂的加工定制，也可以让客户查询相关的业务；</div><div>佩兰互动：增加这一模块，更好向客户宣传不定期的活动，及时的推出新产品。更好的维持客户关系。</div></p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
                     <li>
-                        <h3>这一行也是为了凑版面</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam。
-                        </p>
-                    </li>                     
+                        <h3 contenteditable="true">手机端订餐网</h3>
+                        <p contenteditable="true"><p class="MsoNormal" style="line-height: 150%;"><b><span style="font-family: 宋体; line-height: 150%; font-size: 10pt;"><font face="宋体">项目描述：</font></span></b><b><span style="font-family: 宋体; line-height: 150%; font-size: 10pt;"><o:p></o:p></span></b></p><p class="MsoNormal" style="line-height: 150%;"><!--[if !supportLists]--><span style="font-family:宋体;font-size:10.5000pt;mso-font-kerning:0.0000pt;">1.</span><!--[endif]--><span style="mso-spacerun:'yes';font-family:宋体;line-height:150%;font-size:10.5000pt;mso-font-kerning:0.0000pt;"><font face="宋体">使用</font>Angular JS 特定的页面结构（一个index+多个伪页面）</span><span style="mso-spacerun:'yes';font-family:宋体;line-height:150%;font-size:10.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="line-height: 150%;"><!--[if !supportLists]--><span style="font-family:宋体;font-size:10.5000pt;mso-font-kerning:0.0000pt;">2.</span><!--[endif]--><span style="mso-spacerun:'yes';font-family:宋体;line-height:150%;font-size:10.5000pt;mso-font-kerning:0.0000pt;"><font face="宋体">使用</font>Bootstrap进行页面视觉渲染</span><span style="mso-spacerun:'yes';font-family:宋体;line-height:150%;font-size:10.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="line-height: 150%;"><!--[if !supportLists]--><span style="font-family:宋体;font-size:10.5000pt;mso-font-kerning:0.0000pt;">3.</span><!--[endif]--><span style="mso-spacerun:'yes';font-family:宋体;line-height:150%;font-size:10.5000pt;mso-font-kerning:0.0000pt;"><font face="宋体">使用</font>route配置伪页面之间跳转逻辑</span><span style="mso-spacerun:'yes';font-family:宋体;line-height:150%;font-size:10.5000pt;mso-font-kerning:0.0000pt;"><o:p></o:p></span></p><p class="MsoNormal" style="line-height: 150%;"><!--[if !supportLists]--><span style="font-family:宋体;font-size:10.5000pt;mso-font-kerning:0.0000pt;">4.</span><!--[endif]--><span style="mso-spacerun:'yes';font-family:宋体;line-height:150%;font-size:10.5000pt;mso-font-kerning:0.0000pt;"><font face="宋体">使用</font>$.get()异步获取服务器菜品数据，回调函数中实现main伪页面初始展示5条数据，点击查看更多，每次加载3条数据</span><span style="mso-spacerun:'yes';font-family:宋体;line-height:150%;font-size:10.5000pt;mso-font-kerning:1.0000pt;"><o:p></o:p></span></p></p>
+                    <span class="item-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></li>
+                </ul>
             </div>
             <div class="aboutme info-unit right-paragraph">
-                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title">自我评价</span></h2>
+                <h2 class="info-header"><i class="iconfont icon-flower"></i> <span class="info-title" contenteditable="true">自我评价</span><span class="unit-remove" style="visibility: hidden;"><i class="iconfont icon-delete"></i></span></h2>
                 <hr>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
+                <p contenteditable="true"><p class="16" style="margin-right: 0pt; margin-left: 39pt; text-indent: -18pt; line-height: 150%;"><font face="宋体"><span style="font-size: 15px;">1．本人适应力强、勇于迎接新挑战，有良好的思想品德和职业素质，并有良好的团队协作和敬业精神。</span></font></p><p class="16" style="margin-right: 0pt; margin-left: 39pt; text-indent: -18pt; line-height: 150%;"><font face="宋体"><span style="font-size: 15px;">2．对工作有上进心,有团队精神。在以往学习和工作中，对新知识、新事物能很快地接受并掌握，对工作负责也能细心完成本职工作。</span></font></p><p class="16" style="margin-right: 0pt; margin-left: 39pt; text-indent: -18pt; line-height: 150%;"><font face="宋体"><span style="font-size: 15px;">3．热爱前端，对前端工作充满激情，工作高度专注。</span></font></p></p>
             </div>
         </div>
     </div>
-</body>
 
-</html>
+
+
+<div class="remodal-overlay remodal-is-closed" style="display: none;"></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="portrait-modal" tabindex="-1">
+                    <h3 contenteditable="true">请输入图片URL地址：</h3>
+                    <br>
+                    <input type="text" id="avatar-url">
+                    <button data-remodal-action="confirm" class="remodal-confirm">确定</button>
+                </div></div><div id="goog-gt-tt" class="skiptranslate" dir="ltr"><div style="padding: 8px;"><div><div class="logo"><img src="https://www.gstatic.com/images/branding/product/1x/translate_24dp.png" width="20" height="20" alt="Google 翻译"></div></div></div><div class="top" style="padding: 8px; float: left; width: 100%;"><h1 class="title gray">原文</h1></div><div class="middle" style="padding: 8px;"><div class="original-text"></div></div><div class="bottom" style="padding: 8px;"><div class="activity-links"><span class="activity-link">提供更好的翻译建议</span><span class="activity-link"></span></div><div class="started-activity-container"><hr style="color: #CCC; background-color: #CCC; height: 1px; border: none;"><div class="activity-root"></div></div></div><div class="status-message" style="display: none;"></div></div><div class="remodal-wrapper remodal-is-closed" style="display: none;"><div class="remodal remodal-img remodal-is-initialized remodal-is-closed" data-remodal-id="weixin-modal" tabindex="-1">
+                <h3 contenteditable="true"><font><font>请输入图片URL地址：</font></font></h3>
+                <br>
+                <input type="text" id="weixin-url">
+                <button data-remodal-action="confirm" class="remodal-confirm"><font><font>确定</font></font></button>
+            </div></div><div class="goog-te-spinner-pos"><div class="goog-te-spinner-animation"><svg xmlns="http://www.w3.org/2000/svg" class="goog-te-spinner" width="96px" height="96px" viewBox="0 0 66 66"><circle class="goog-te-spinner-path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle></svg></div></div></body></html>
